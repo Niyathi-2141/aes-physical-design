@@ -1,0 +1,37 @@
+OpenROAD unknown 
+Features included (+) or not (-): -GPU +GUI -Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[WARNING ORD-0012] Hierarchical flow (-hier) is currently in development and may cause multiple issues. Do not use in production environments.
+Clock clk
+   0.20 source latency u0.w[0][31]$_DFF_P_/CK ^
+  -0.21 target latency sa00_sr[3]$_DFF_P_/CK ^
+   0.00 CRPR
+--------------
+  -0.02 setup skew
+
+Clock vclk_clk
+No launch/capture paths found.
+
+Clock clk
+rise -> rise
+    min     max
+   0.00    0.00 source latency
+   0.20         network latency u0.u0.d[1]$_DFF_P_/CK
+           0.21 network latency sa00_sr[3]$_DFF_P_/CK
+---------------
+   0.20    0.21 latency
+           0.02 skew
+
+fall -> fall
+    min     max
+   0.00    0.00 source latency
+   0.21         network latency u0.u0.d[1]$_DFF_P_/CK
+           0.23 network latency sa00_sr[3]$_DFF_P_/CK
+---------------
+   0.21    0.23 latency
+           0.02 skew
+
+
+Clock vclk_clk
+
